@@ -1,3 +1,4 @@
 .env
 myproject/
 __pycache__/
+*.log
