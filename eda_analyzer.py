@@ -8,10 +8,8 @@ from dotenv import load_dotenv
 # Load variables from .env into the system environment
 load_dotenv() 
 
-# Now LangChain will automatically find "GOOGLE_API_KEY" in the environment
 
 def parse_timing_log(file_path):
-    """Parses an EDA timing log and extracts critical metrics."""
     print("Parsing log file...")
     
     parsed_data = {
