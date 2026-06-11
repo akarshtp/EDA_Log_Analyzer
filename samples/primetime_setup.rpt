@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : risc_v_core
+Version: T-2022.03-SP5
+Date   : Wed Jun 11 10:00:00 2026
+****************************************
+
+Operating Conditions: ss_0p75v_125c   Library: saed14rvt_ss_0p75v_125c
+Wire Loading Model Mode: top
+
+  Startpoint: cpu_regs/rf_reg_3__7_
+              (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: alu_out_reg_7_
+            (rising edge-triggered flip-flop clocked by core_clk)
+  Path Group: core_clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock core_clk (rise edge)                              0.00       0.00
+  clock network delay (propagated)                        0.32       0.32
+  cpu_regs/rf_reg_3__7_/CLK (DFFX1_RVT)                  0.00       0.32 r
+  cpu_regs/rf_reg_3__7_/Q (DFFX1_RVT)                    0.18       0.50 r
+  U1042/Y (INVX2_RVT)                                    0.06       0.56 f
+  U1088/Y (NAND2X1_RVT)                                  0.09       0.65 r
+  U1120/Y (AOI22X1_RVT)                                  0.14       0.79 f
+  U1205/Y (OAI21X1_RVT)                                  0.11       0.90 r
+  U1287/Y (XOR2X1_RVT)                                   0.22       1.12 f
+  U1305/CO (ADDFX1_RVT)                                  0.28       1.40 f
+  U1312/CO (ADDFX1_RVT)                                  0.25       1.65 f
+  U1340/Y (NAND2X0_RVT)                                  0.15       1.80 r
+  U1355/Y (NOR2X0_RVT)                                   0.12       1.92 f
+  alu_out_reg_7_/D (DFFX1_RVT)                           0.00       1.92 f
+  data arrival time                                                  1.92
+
+  clock core_clk (rise edge)                              2.00       2.00
+  clock network delay (propagated)                        0.30       2.30
+  clock uncertainty                                      -0.10       2.20
+  alu_out_reg_7_/CLK (DFFX1_RVT)                         0.00       2.20 r
+  library setup time                                     -0.12       2.08
+  data required time                                                 2.08
+  --------------------------------------------------------------------------
+  data required time                                                 2.08
+  data arrival time                                                 -1.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                         0.16
