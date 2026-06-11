@@ -1,5 +1,23 @@
+# Environments
 .env
 myproject/
+venv/
+env/
+
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and databases
 *.log
+
+# IDEs
 .vscode/
+.idea/
