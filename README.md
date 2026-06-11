@@ -12,7 +12,7 @@ A Python tool that uses **Gemini 2.5 Flash** with **Pydantic structured output**
 - **Rich CLI Output** — Beautiful terminal display with colored tables, timing path visualization, and bottleneck highlighting.
 - **Type-Safe** — All extracted data is validated through Pydantic v2 schemas.
 
-## 📖 Project History (v1 vs. v2)
+## Project History (v1 vs. v2)
 
 
 
